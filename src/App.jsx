@@ -1,3 +1,5 @@
+import { Part1a } from "./components/Part1a";
+
 const Header = ({ name }) => {
   return <h1>{name}</h1>;
 };
@@ -49,6 +51,7 @@ const App = () => {
       <Header name={course.name} />
       <Content parts={course.parts} />
       <Total parts={course.parts} />
+      <Part1a />
     </div>
   );
 };
